@@ -1,1 +1,109 @@
-hello world
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Max Hit Calculator </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- makes web responsive -->		
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- link to main stylesheet -->
+	</head>
+
+	<body>
+		<h1 class="banner"> Dharok Damage Calculator </h1>
+
+		<br />
+		<br />
+		<br /> 
+
+
+		<div class="main-div">
+			<br />
+
+			<img src="./images/Max hit calculator/Empty Fields.png" class="calc-banner">
+			<img src="./images/Max hit calculator/Cape Options.png" class="calc-banner">
+			<img src="./images/Max hit calculator/Example Output.png" class="calc-banner">
+			
+
+			<h1> Project Goals </h1>	
+			<hr> 		
+			<ul>
+				<li>
+					<p class="list-elements"> Create a project that incorporates many good object-oriented programming practices </p>
+				</li>
+				<li>
+					<p class="list-elements"> Familiarize myself with the Swing library along with the Java API and how to find relevant classes I need </p>
+				</li>
+				<li>
+					<p class="list-elements"> Understand the need for proper naming conventions and code-commenting etiquette (including javadocs) </p>
+				</li>
+				<li>
+					<p class="list-elements"> Complete a program that I would regularly use </p>
+				</li>
+			</ul>
+
+
+			<h1> Obstacles I Faced </h1>
+			<hr> 
+
+			<div class="text-div">
+				<h3> Integer Division </h3>
+				<p> I was aware that when you divide two integers together, the returned value would be rounded down to the nearest integer. What I wasn’t aware of was that even if you set the variable that holds the integer division as a double, the output would still be the same, but casted to a double. </p>
+				<p> This was a huge issue. I made the mistake of designing multiple methods at once, and when I went to test the class, the result were completely off. It took me hours to find out what was going wrong. <a href="https://stackoverflow.com/questions/4685450/why-is-the-result-of-1-3-0">This stackoverflow thread </a> helped me find out my issue. </p> 				
+			</div>
+
+			<div class="text-div">
+				<h3> GUI Layout </h3>
+				<p> I had a very difficult time making the GUI appear how I wanted it to. I did a lot of research regarding Layout Managers and ended up finding out the proper way to display the Swing components. </p>
+				<p> The JFrame's Layout Manager was the default Border Layout. I made one large JPaneland set its Layout Manager to the Box Layout, so it's component's would be stacked vertically. I then made several smaller JPanels, with a flow Layout Manager. These smallers JPanels would be added to the main JPanel, so they would stack. Inside these JPanels, I added adjacent components, thus displaying everything how I wanted it to appear.
+				</p>
+			</div>
+
+			<h1> Reflections </h1>
+			<hr> 
+			<div class="text-div">
+				<p> Overall, I feel like this project accomplished all the goals. I've learned a lot from this project, but one of the most important things I learned was the importance of double checking your code. I've wasted around 10 hours of my time from all the issues I faced due to the fact I was not checking my code, method at a time. I have since developed the habit of ensuring each method I make is working how it is supposed to.
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<footer>
+			<div class = "footer">
+				<h1 class="footer"> Contact Info </h1>
+				<table>
+					<tr>
+						<td>
+							<p class="footer"> E-Mail: </p>
+						</td>							
+						<td>
+							<a href="mailto:mo.hamza.khurram@gmail.com" class="footer"> Mo.Hamza.Khurram@gmail.com
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<p class="footer"> GitHub: </p>
+						</td>							
+						<td>
+							<a href="https://github.com/MarruhK/" class="footer"> https://github.com/MarruhK/ </a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<p class="footer"> Phone: </p>
+						</td>							
+						<td>
+							<p class="footer"> 905 - 691 - 8961 </p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</footer>
+	</body>
+</html>
